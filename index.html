@@ -26,7 +26,7 @@
           </a>
           <ul class="list header-nav-list">
             <li>
-              <a class="link" href="./index.html">Studio</a>
+              <a class="link current" href="./index.html">Studio</a>
             </li>
             <li>
               <a class="link" href="./portfolio.html">Portfolio</a>
@@ -55,7 +55,7 @@
       <section class="section-one section-one-background">
         <div class="container">
           <h1 class="header-first">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-orderservice">
+          <button type="button" class="button-orderservice" data-modal-open>
             Order Service
           </button>
         </div>
@@ -487,5 +487,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
