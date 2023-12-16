@@ -63,7 +63,6 @@ body{
 }
 
 .list .link {
-    /* font-size: 16px; */
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -130,7 +129,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-75%);
+    transform: translateX(-50%) translateY(-50%);
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
@@ -157,6 +156,11 @@ body{
     background-color: var(--cornflower);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon-close {
+    fill: var(--color-navy-blue);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
@@ -190,6 +194,10 @@ body{
     position: relative;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-list .current{
+    color: var(--ocean);
 }
 
 .header-nav-list .current::after {
